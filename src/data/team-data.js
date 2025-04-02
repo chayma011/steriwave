@@ -18,12 +18,6 @@ const team_data = [
         membar_name: "Chayma Jeballi",
         job_title: "CTO",
     },
-    {
-        id: 4, 
-        img: "/assets/img/team/ici.jpg",
-        membar_name: "Sinda Messoudi",
-        job_title: "marketing",
-    },
 
 
     // team page

@@ -7,8 +7,8 @@ const cta_content = {
     contact_info: [
         {
             id: 1, 
-            icon: "fab fa-skype",
-            socile: "Skype",
+            icon: "far fa-envelope",
+            socile: "Email",
             link:"support@steriwave-uv.com",
             contact: "support@steriwave-uv.com",
         },
@@ -29,17 +29,17 @@ const {map_link, title, contact_info}  = cta_content
 const CtaArea = () => {
     return (
         <>
-            <div className="tp-cta-area black-bg cta-bg position-relative" id='contact' style={{backgroundImage: `url(/assets/img/bg/cta-bg.png)`}}>
+            <div className="tp-cta-area black-bg cta-bg position-relative" id='contact' style={{backgroundImage: `url(/assets/img/bg/cta-bg.png)`, height: "600px"}}>
                 <div className="cta-map">
-                    <iframe src={map_link}  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src={map_link} style={{ height: "600px" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div className="container">
                     <div className="row justify-content-end">
                         <div className="col-xl-6 col-lg-12">
-                        <div className="tp-quote-box pl-80 pt-120 pb-120">
+                        <div className="tp-quote-box pl-80 pt-60 pb-60">
                             <div className="tp-section-box cta-map-section p-relative">
-                                <span className="tp-section-subtitle right-white  d-inline-block mb-10">get a quote</span>
-                                <h2 className="tp-section-title mb-50">
+                                <span className="tp-section-subtitle right-white d-inline-block mb-10">get a quote</span>
+                                <h2 className="tp-section-title mb-30">
                                      {title}
                                 </h2>
                             </div>
@@ -47,7 +47,7 @@ const CtaArea = () => {
                                 {contact_info.map((item, i)  => 
                                    <div key={i} className="tp-cta-box d-flex align-items-center">
                                         <div className="tp-cta-icon">
-                                        <a href="#"><i className={item.icon}></i></a>
+                                        <a href={item.link}><i className={item.icon}></i></a>
                                         </div>
                                         <div className="tp-cta-content">
                                         <label>{item.socile}</label>

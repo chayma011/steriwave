@@ -22,9 +22,15 @@ const ServiceArea = () => {
                             <div key={i} className="col-lg-4 col-md-6">
                                 <div className="tpsvbox mb-30">
                                     <div className="tpsvbox__thumb">
-                                        <div className="fix"><a href="#"><img src={item.img} alt="theme-pure" /></a></div>
+                                        <div className="fix">
+                                            <Link href={`/products/${item.id}`}>
+                                                <img src={item.img} alt={item.title} />
+                                            </Link>
+                                        </div>
                                         <div className="tpsvbox__icon">
-                                            <a href="#"><i className={item.icon}></i></a>
+                                            <Link href={`/products/${item.id}`}>
+                                                <i className={item.icon}></i>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="tpsvbox__content text-center">
@@ -32,7 +38,7 @@ const ServiceArea = () => {
                                             <h2>{item.sirial}</h2>
                                         </div>
                                         <h3 className="tpsvbox__title">
-                                            <Link href="/services-details">{item.title}</Link>
+                                            <Link href={`/products/${item.id}`}>{item.title}</Link>
                                         </h3>
                                         {/* <p className="m-0">Service No {item.sirial}</p> */}
                                     </div>
