@@ -45,7 +45,7 @@ const HeaderTwo = () => {
                         <div className="row align-items-center">
                         <div className="col-xl-3 col-lg-6 col-md-6 col-6">
                             <div className="logo">
-                                <Link href="/"><img src="/assets/img/logo/sv-tab-icon.png" alt="logo" /></Link>
+                                <Link href="/"><img src="/assets/img/logo/5.png" alt="logo" style={{width: '35%'}} /></Link>
                             </div>
                         </div>
                         <div className="col-xl-9">
