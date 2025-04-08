@@ -43,7 +43,7 @@ const CtaArea = () => {
                                      {title}
                                 </h2>
                             </div>
-                            <div className="tp-cta-main d-flex">
+                            <div className="tp-cta-main d-flex" style={{width:'700px'}}>
                                 {contact_info.map((item, i)  => 
                                    <div key={i} className="tp-cta-box d-flex align-items-center">
                                         <div className="tp-cta-icon">

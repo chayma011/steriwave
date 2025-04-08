@@ -5,7 +5,7 @@ import MobileMenus from './mobile-menus';
 
 const Sidebar = ({isOpen, setIsOpen}) => {
     return (
-        <>
+        <> 
             <div className={`tp-sidebar-menu ${isOpen && "sidebar-opened"}`}>
                 <button className="sidebar-close"><i className="fal fa-times"></i></button>
                 <div onClick={() => setIsOpen(false)} className="side-logo mb-20">
@@ -17,9 +17,9 @@ const Sidebar = ({isOpen, setIsOpen}) => {
                         <h3>CONTACT US</h3>
                     </div>
                     <ul className="sidebar-list">
-                        <li>27 Division St, New York</li>
-                        <li>+1 800 123 456 78</li>
-                        <li>sectox@mail.com</li>
+                        <li>Khzema, Sousse, Tunisia</li>
+                        <li>+216 51 488 801</li>
+                        <li>contact@steriwave-uv.com</li>
                     </ul>
                     <div className="tp-sidebar-social">
                         <SocialLinks />  

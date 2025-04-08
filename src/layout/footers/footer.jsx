@@ -25,7 +25,7 @@ const FooterSubscribe = () => {
 
     return (
         <div className="footer-subscribe">
-            <form onSubmit={sendEmail}>
+            {/* <form onSubmit={sendEmail}>
                 <textarea 
                     placeholder="Write your message here..." 
                     value={message}
@@ -36,7 +36,7 @@ const FooterSubscribe = () => {
                     <i className="far fa-paper-plane"></i>
                 </button>
             </form>
-            {responseMessage && <p>{responseMessage}</p>}
+            {responseMessage && <p>{responseMessage}</p>} */}
         </div>
     );
 };
@@ -104,9 +104,11 @@ const Footer = ({ style_2 }) => {
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <div className={`footer-widget ${style_2 ? "footer-widget-2 footer-col-3" : "footer-col-4"} mb-50`}>
-                                <h3 className="footer-widget-title">Get Newsletter</h3>
-                                <p>Sign up today for hints, tips & the latest product news</p>
+                                {/* <h3 className="footer-widget-title">Get Newsletter</h3>
+                                <p>Sign up today for hints, tips & the latest product news</p> */}
                                 <FooterSubscribe />
+                                <h3 className="footer-widget-title">Social Links</h3>
+
                                 <div className="footer-social mt-20">
                                     <SocialLinks />
                                 </div>

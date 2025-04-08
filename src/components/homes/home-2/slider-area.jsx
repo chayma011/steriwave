@@ -34,7 +34,7 @@ const slider_data = [
         col: "col-xxl-6 col-xl-7 col-lg-8 col-md-12", 
         bg_img: "/assets/img/slider/A.jpg",
         sub_title: "Welcome to STERIWAVE, the leading reference in UVC sterilization.",
-        title: "STERIWAVE: Your Barrier Against the Invisible",
+        title:<>STERIWAVE  {" "} <br /> Your Barrier Against the Invisible </>,
         info: <>Our innovative solutions provide fast, effective, and chemical-free  {" "} <br />disinfection for hospitals, the food industry, and the pharmaceutical
         sector. </>, 
         slider_service_title:  <> <b>Installation</b> <br /> Free Service </> ,
@@ -73,14 +73,14 @@ const SliderArea = () => {
                                         <div className={item.col}>
                                             <div className="tp-slider-content tp-slider-content-two ">
                                                 <span className="tp-slider-sub-title p-0">{item.sub_title}</span>
-                                                <h2 className="tp-slider-title">{item.title}</h2>
+                                                <h2 className="tp-slider-title" style={{fontSize:'50px'}}>{item.title}</h2>
                                                 <p>{item.info}</p>
                                                 <div className="tp-slide-btn-box mt-45">
                                                 <div className="slider-btn mr-30">
                                                     <Link  href="/contact" className="tp-btn-white">Get A Quote</Link>
                                                 </div>
                                                 <div className="slider-btn">
-                                                    <Link href="/services-details" className="tp-btn">Our Products</Link>
+                                                    <Link href="/#products" className="tp-btn">Our Products</Link>
                                                 </div>
                                                 </div>
                                             </div>

@@ -20,9 +20,12 @@ const menu_data = [
     title: "Products",
     link: "/#products",
     sub_menus: [ 
-      { link: "/products/sterifix", title: "Sterifix" }, 
-      { link: "/products/steripro", title: "Steripro" },
+      { link: "/products/steripro", title: "Steripro" }, 
+      { link: "/products/steripro+", title: "Steripro+" },
       { link: "/products/steritower", title: "Steritower" },
+      { link: "/products/sterifix", title: "Sterifix" }, 
+      { link: "/products/steribox", title: "Steribox" },
+      { link: "/products/steripower", title: "Steripower" }, 
     ],
   },
   {

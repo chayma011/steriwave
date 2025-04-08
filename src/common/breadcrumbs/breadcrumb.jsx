@@ -5,7 +5,7 @@ const Breadcrumb = ({title="About" , innertitle="Blog Grid Classic" }) => {
     return (
         <>
             <section className="breadcrumb__area include-bg pt-150 pb-150" 
-                  style={{backgroundImage: `url(/assets/img/breadcrumb/A9.jpg)`}}>
+                  style={{backgroundImage: `url(/assets/img/breadcrumb/C1.png)`}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-xxl-12">
