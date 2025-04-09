@@ -9,57 +9,66 @@ import HeaderTwo from "@/src/layout/headers/header-2";
 import Breadcrumb from "@/src/common/breadcrumbs/breadcrumb";
 import Slider from 'react-slick';
 
-const router = useRouter();
-const { id } = router.query;
-const sliderRef = useRef(null);
+const ServiceDetailsPage = () => {
+  const router = useRouter();
+  const { id } = router.query;
+  const sliderRef = useRef(null);
 
-// Find the service details from service_data
-const service = service_data.find(item => item.id === id);
+  // Trouver le service
+  const service = service_data.find(item => item.id === id);
 
-// Get related products (excluding current product)
-const relatedProducts = service_data.slice(3, 6).filter(item => item.id !== id);
+  const relatedProducts = service_data.slice(3, 6).filter(item => item.id !== id);
 
-const handleClick = async (e, link) => {
-  // Check if the link is an internal anchor with the format "/#section"
-  if (link.startsWith('/#')) {
-    e.preventDefault();
-    const sectionId = link.split('/#')[1];
-    
-    if (router.pathname !== '/') {
-      // If we're not on the home page, navigate to home with the hash
-      await router.push(`/${link}`);
-    } else {
-      // If we're already on the home page, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+  const handleClick = async (e, link) => {
+    if (link.startsWith('/#')) {
+      e.preventDefault();
+      const sectionId = link.split('/#')[1];
+
+      if (router.pathname !== '/') {
+        await router.push(`/${link}`);
+      } else {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     }
+  };
+
+  useEffect(() => {
+    if (router.asPath.startsWith('/#')) {
+      const sectionId = router.asPath.split('/#')[1];
+      const element = document.getElementById(sectionId);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [router.asPath]);
+
+  if (!service) {
+    return <div>Loading...</div>;
   }
+
+  return (
+    <Wrapper>
+      <SEO pageTitle={service.title || "Service Details"} />
+      <HeaderTwo />
+      <Breadcrumb title={service.title || "Service Details"} />
+      <div className="product-details-content">
+        <div className="product-top mb-10">
+          <div className="product-tag">
+            <Link href="/#products" onClick={(e) => handleClick(e, '/#products')}>UVC Sterilization</Link>
+          </div>
+        </div>
+        <h1>{service.title}</h1>
+        <p>{service.description}</p>
+        {/* ... tu peux ajouter le slider ici si tu veux ... */}
+      </div>
+      <Footer />
+    </Wrapper>
+  );
 };
 
-// Handle scroll when coming from another page
-useEffect(() => {
-  if (router.asPath.startsWith('/#')) {
-    const sectionId = router.asPath.split('/#')[1];
-    const element = document.getElementById(sectionId);
-    if (element) {
-      setTimeout(() => {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
-  }
-}, [router.asPath]);
-
-// If service not found or page is initially loading
-if (!service) {
-  return <div>Loading...</div>;
-}
-
-<div className="product-details-content">
-  <div className="product-top mb-10">
-    <div className="product-tag">
-      <Link href="/#products" onClick={(e) => handleClick(e, '/#products')}>UVC Sterilization</Link>
-    </div>
-  </div>
-</div> 
+export default ServiceDetailsPage;

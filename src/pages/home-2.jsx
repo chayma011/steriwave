@@ -6,7 +6,7 @@ import HomeTwo from "../components/homes/home-2";
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={"Sectox - CCTV & Security"} />
+      <SEO pageTitle={"Steriwave - UVC"} />
       <HomeTwo />
     </Wrapper>
   );

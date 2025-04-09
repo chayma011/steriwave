@@ -6,7 +6,7 @@ import Contact from '../components/contact';
 const index = () => {
     return (
         <Wrapper>
-            <SEO pageTitle={"Sectox - CCTV & Security"} />
+            <SEO pageTitle={"Steriwave - UVC"} />
             <Contact />            
         </Wrapper>
     );

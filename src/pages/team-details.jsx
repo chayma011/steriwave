@@ -6,7 +6,7 @@ import TeamDetails from "../components/team-details";
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={"Sectox - CCTV & Security"} />
+      <SEO pageTitle={"Steriwave - UVC"} />
       <TeamDetails />
     </Wrapper>
   );

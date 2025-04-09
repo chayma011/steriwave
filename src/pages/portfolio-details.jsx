@@ -6,7 +6,7 @@ import PortfolioDetails from "../components/portfolio-details";
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={"Sectox - CCTV & Security"} />
+      <SEO pageTitle={"Steriwave - UVC"} />
       <PortfolioDetails />
     </Wrapper>
   );
