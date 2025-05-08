@@ -59,7 +59,7 @@ const ServiceDetailsPage = () => {
       <div className="product-details-content">
         <div className="product-top mb-10">
           <div className="product-tag">
-            <Link href="/#products" onClick={(e) => handleClick(e, '/#products')}>UVC Sterilization</Link>
+            <Link href="/products" onClick={(e) => handleClick(e, '/products')}>UVC Sterilization</Link>
           </div>
         </div>
         <h1>{service.title}</h1>

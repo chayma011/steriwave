@@ -56,7 +56,7 @@ const ServiceDetails = () => {
     <Wrapper>
       <SEO pageTitle={`${service.title} - Sectox CCTV & Security`} />
       <HeaderTwo />
-      <Breadcrumb title={service.title} innertitle="Our Products" />
+      <Breadcrumb title={service.title} innertitle="" />
       <main>
         <div className="shop-details-area pt-120 pb-90">
           <div className="container">
@@ -74,7 +74,7 @@ const ServiceDetails = () => {
                 <div className="product-details-content">
                   <div className="product-top mb-10">
                     <div className="product-tag">
-                      <Link href="/#products">UVC Sterilization</Link>
+                      <Link href="/products">UVC Sterilization</Link>
                     </div>
                   </div>
                   <h3 className="product-details-title mb-20">{service.title}</h3>

@@ -1,14 +1,14 @@
-
 // font url
 
-$font-url: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap';
+$font-url: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap';
 
 // font family
 $font-family: (
     ff: (
-        body: "'Space Grotesk', sans-serif",
-        heading: "'Space Grotesk', sans-serif",
-        p: "'Space Grotesk', sans-serif",
+        body: "'Roboto', sans-serif",
+        heading: "'Roboto', sans-serif",
+        p: "'Roboto', sans-serif",
+        ui: "'Roboto', sans-serif",
         fontawesome: '"Font Awesome 5 Pro"',
     )
 );

@@ -39,13 +39,13 @@ const HeaderTwo = () => {
                         </div>
                     </div>
                 </div>
-                <div className="tp-header-area header-area-space p-relative pt-20 pb-50 d-none d-xl-block"
-                    style={{backgroundImage: `url(/assets/img/bg/header-bg.jpg)`}} >
+                <div className="tp-header-area header-area-space p-relative pt-0 pb-30 d-none d-xl-block"
+                    style={{backgroundImage: `url(/assets/img/bg/header-bg.jpg)`, paddingbottom: '10px', paddingtop: '0px'}} >
                     <div className="container">
                         <div className="row align-items-center">
                         <div className="col-xl-3 col-lg-6 col-md-6 col-6">
-                            <div className="logo">
-                                <Link href="/"><img src="/assets/img/logo/5.png" alt="logo" style={{width: '35%'}} /></Link>
+                            <div className="logo" style={{paddingLeft: '0'}}>
+                                <Link href="/"><img src="/assets/img/logo/4.png" alt="logo" style={{width: '50%', marginLeft: '', marginTop: '20px', marginBottom:'20px'}} /></Link>
                             </div>
                         </div>
                         <div className="col-xl-9">
@@ -83,7 +83,7 @@ const HeaderTwo = () => {
                 </div>
                 <div className="tp-header-menu-area d-none d-xl-block">
                     <div className="container">
-                        <div className="header-inner white-bg">
+                        <div className="header-inner white-bg" style={{boxShadow: '0 2px 10px rgba(70, 68, 68, 0.09)'}}>
                         <div className="row g-0 align-items-center">
                             <div className="col-xl-9">
                                 <div className="tp-main-menu-2">
@@ -112,7 +112,7 @@ const HeaderTwo = () => {
                         <div className="row align-items-center">
                         <div className="col-6">
                             <div className="logo">
-                                <Link href="/"><img src="/assets/img/logo/logo2.png" alt="logo" /></Link>
+                                <Link href="/"><img src="/assets/img/logo/5.png" alt="logo" /></Link>
                             </div>
                         </div>
                         <div className="col-6">

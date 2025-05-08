@@ -1,26 +1,27 @@
 import Breadcrumb from "@/src/common/breadcrumbs/breadcrumb";
-import HeaderOne from "@/src/layout/headers/header";
 import HeaderTwo from "@/src/layout/headers/header-2";
 import React from "react"; 
 import AboutArea from "./about-area";
 import ServiceArea from "./service-area";
 import GallaryArea from "./gallary-area";
 import OurHistory from "./our-history";
-import FeatureArea from "./feature-area";
-import BlogArea from "./blog-area";
+// import FeatureArea from "./feature-area";
+// import BlogArea from "./blog-area";
 import Footer from "@/src/layout/footers/footer";
+import Team from "./team";
 
 const About = () => {
   return (
     <>
       <HeaderTwo />
-      {/* <Breadcrumb  title="About"  innertitle="Blog Grid Classic"  /> */}
+      <Breadcrumb  title="About"  innertitle=""  /> 
       <AboutArea />
       <ServiceArea />
       <GallaryArea />
       <OurHistory />
-      <FeatureArea />
-      <BlogArea />
+      <Team />
+      {/* <FeatureArea /> */}
+      {/* <BlogArea /> */}
       <Footer />
     </>
   );

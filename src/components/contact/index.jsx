@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <HeaderTwo />
-      <Breadcrumb title={" Contact"} innertitle={"Contact Us"}  />
+      <Breadcrumb title={" Contact"} innertitle={""}  />
       <ContactArea />
       <ContactInfo />
       <Footer />

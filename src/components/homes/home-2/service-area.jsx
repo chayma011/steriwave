@@ -15,7 +15,7 @@ const ServiceArea = () => {
                                 What We Provide
                             </h2>
                         </div>
-                        </div>
+                        </div> 
                     </div>
                     <div className="row">
                         {service_data.slice(3, 6).map((item, i) => 

@@ -8,7 +8,7 @@ const ShopDetails = () => {
   return (
     <>
       <HeaderTwo />
-      <Breadcrumb title=" Shop Details" innertitle="Our Products" />
+      <Breadcrumb title="Products" innertitle="" />
       <ShopDetailsArea />
 
       <Footer />

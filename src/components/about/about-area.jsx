@@ -12,12 +12,16 @@ const about_content = {
     // post_img: "/assets/img/about/A001.JPg",
     post : <>With a commitment to innovation and excellence, we have become a trusted name in the fight against harmful pathogens, ensuring a cleaner and safer world for all.</>,
     author: <><b>Ferid Kamel</b> <i>-Head Of Idea</i></>,
-    fetoure_1: "New Business Ideas create",
-    fetoure_2: "Grow corporate financial system",
+    fetoure_1: "Chemical-Free Alternative",
+    fetoure_2: "Fast & Effective",
+    fetoure_3: "Protection for Sensitive Materials",
+    fetoure_4: "Reduced Antimicrobial Resistance",
+    fetoure_5: "Cost-Effective",
+    fetoure_6: "Sustainability Responsible",
 
-
+ 
 }  
-const {img, title, year_count, year, about, about_title, post_img, post, author, fetoure_1, fetoure_2}  = about_content
+const {img, title, year_count, year, about, about_title, post_img, post, author, fetoure_1, fetoure_2, fetoure_3, fetoure_4, fetoure_5, fetoure_6 }  = about_content
 
 
 const AboutArea = () => {
@@ -49,7 +53,7 @@ const AboutArea = () => {
                             <hr className="mt-25 mb-30" />
                             <div className="tp-ab-meta">
                                 <div className="about-meta-img d-flex">
-                                    <img src={post_img} alt="theme-pure" />
+                                    {/* <img src={post_img} alt="theme-pure" /> */}
                                     <div className="tp-ab-meta-text pl-30">
                                     <h4>{post}</h4>
                                     <span>{author}</span>
@@ -62,6 +66,10 @@ const AboutArea = () => {
                                     <ul>
                                     <li><i className="fal fa-check"></i>{fetoure_1}</li>
                                     <li><i className="fal fa-check"></i>{fetoure_2}</li>
+                                    <li><i className="fal fa-check"></i>{fetoure_3}</li>
+                                    <li><i className="fal fa-check"></i>{fetoure_4}</li>
+                                    <li><i className="fal fa-check"></i>{fetoure_5}</li>
+                                    <li><i className="fal fa-check"></i>{fetoure_6}</li>
                                     </ul>
                                 </div>
                             </div>

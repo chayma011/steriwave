@@ -8,7 +8,7 @@ const Shop = () => {
   return (
     <>
       <HeaderOne />
-      <Breadcrumb title=" Shop" innertitle="Our Products" /> 
+      <Breadcrumb title=" Shop" innertitle="" /> 
       <ShoppingArea />
       <Footer />
     </>

@@ -35,8 +35,8 @@ const FooterSubscribe = () => {
                 <button type="submit"> 
                     <i className="far fa-paper-plane"></i>
                 </button>
-            </form>
-            {responseMessage && <p>{responseMessage}</p>} */}
+            </form> */}
+            {responseMessage && <p>{responseMessage}</p>}
         </div>
     );
 };

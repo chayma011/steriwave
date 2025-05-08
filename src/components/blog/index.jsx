@@ -1,5 +1,5 @@
 import Breadcrumb from "@/src/common/breadcrumbs/breadcrumb";
-import HeaderOne from "@/src/layout/headers/header";
+import HeaderTwo from "@/src/layout/headers/header-2";
 import React from "react";
 import PostboxArea from "./postbox-area";
 import Footer from "@/src/layout/footers/footer";
@@ -7,9 +7,9 @@ import Footer from "@/src/layout/footers/footer";
 const Blog = () => {
   return (
     <>
-      <HeaderOne />
+      <HeaderTwo />
       <main>
-        <Breadcrumb title="Blog"  innertitle="News Feeds" />
+        <Breadcrumb title="Blog"  innertitle="" />
         <PostboxArea />
       </main>
       <Footer />

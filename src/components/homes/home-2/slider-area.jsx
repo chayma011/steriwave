@@ -29,20 +29,30 @@ const setting = {
 }
 
 const slider_data = [
-    {
-        id: 1,
-        col: "col-xxl-6 col-xl-7 col-lg-8 col-md-12", 
-        bg_img: "/assets/img/slider/A.jpg",
+    // {
+    //     id: 1,
+    //     col: "col-xxl-6 col-xl-7 col-lg-8 col-md-12", 
+    //     bg_img: "/assets/img/slider/A.jpg",
+    //     sub_title: "Welcome to STERIWAVE, the leading reference in UVC sterilization.",
+    //     title:<>STERIWAVE  {" "} <br /> Your Barrier Against the Invisible </>,
+    //     info: <>Our innovative solutions provide fast, effective, and chemical-free  {" "} <br />disinfection for hospitals, the food industry, and the pharmaceutical
+    //     sector. </>, 
+    //     slider_service_title:  <> <b>Installation</b> <br /> Free Service </> ,
+    //   },
+      {
+        id: 2,
+        col: "col-xxl-6 col-xl-7 col-lg-8", 
+        bg_img: "/assets/img/slider/x3.jpg",
         sub_title: "Welcome to STERIWAVE, the leading reference in UVC sterilization.",
-        title:<>STERIWAVE  {" "} <br /> Your Barrier Against the Invisible </>,
+        title: "STERIWAVE PRO Your Barrier Against the Invisible",
         info: <>Our innovative solutions provide fast, effective, and chemical-free  {" "} <br />disinfection for hospitals, the food industry, and the pharmaceutical
         sector. </>, 
         slider_service_title:  <> <b>Installation</b> <br /> Free Service </> ,
       },
       {
-        id: 2,
+      id: 3,
         col: "col-xxl-6 col-xl-7 col-lg-8", 
-        bg_img: "/assets/img/slider/A1.jpg",
+        bg_img: "/assets/img/slider/x2.jpg",
         sub_title: "Welcome to STERIWAVE, the leading reference in UVC sterilization.",
         title: "STERIWAVE PRO Your Barrier Against the Invisible",
         info: <>Our innovative solutions provide fast, effective, and chemical-free  {" "} <br />disinfection for hospitals, the food industry, and the pharmaceutical

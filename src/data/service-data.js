@@ -2,14 +2,14 @@ const service_data = [
     // home 01
     {
         id: 1,
-        img: "/assets/img/services/sv2.jpg",
+        img: "/assets/img/services/x.jpg",
         icon:"flaticon-cctv-1",
         title:"Commercial CCTV System",
         description: <>Teachings of the great explorer of the truth, the master-builder of human happiness.</>,
     },
     {
         id: 2,
-        img: "/assets/img/services/sv1.jpg",
+        img: "/assets/img/services/x1.jpg",
         icon:"flaticon-cctv",
         title:"Office & Industrial Security",
         description: <>Teachings of the great explorer of the truth, the master-builder of human happiness.</>,
@@ -88,8 +88,9 @@ const service_data = [
             warranty: "5 years"
         }
     },
+    
 
-    // homw 02 features 
+    // home 02 features 
     {
         id: 7,
         sirial: "01",
@@ -123,53 +124,53 @@ const service_data = [
         description: <>Custom disinfection solutions for sensitive medical equipment, laboratory tools, and industrial machinery.</>,
     },
 
-    // service page
+    // products page
     {
         id: 10,
         sirial: "00",
-        img: "/assets/img/services/sv2.jpg",
-        icon:"flaticon-cctv-1",
-        title:"Commercial CCTV System",
+        img: "/assets/img/services/x.jpg",
+        // icon:"flaticon-cctv-1",
+        title:"STERI-BOX",
         description: <>Teachings of the great explorer of the truth, the master-builder of human happiness.</>,
     },
     {
         id: 11,
         sirial: "00",
-        img: "/assets/img/services/sv1.jpg",
-        icon:"tpservices__content",
-        title:"Office & Industrial Security",
+        img: "/assets/img/services/x1.jpg",
+        // icon:"tpservices__content",
+        title:"STERI-FIX",
         description: <>Teachings of the great explorer of the truth, the master-builder of human happiness.</>,
     },
     {
         id: 12,
         sirial: "00",
-        img: "/assets/img/services/sv3.jpg",
+        img: "/assets/img/services/x9.jpg",
         icon:"flaticon-wifi-router",
-        title:"School & Hospital Security",
+        title:"STERI-FIX",
         description: <>Teachings of the great explorer of the truth, the master-builder of human happiness.</>,
     },
     {
         id: 13,
         sirial: "00",
-        img: "/assets/img/services/service-hm-5-1.jpg",
+        img: "/assets/img/services/x8.jpg",
         icon:"flaticon-cloud",
-        title:"24/7 Shield Security",
+        title:"STERI-PRO",
         description: <>Teachings of the great explorer of the truth, the master-builder of human happiness.</>,
     },
     {
         id: 14,
         sirial: "00",
-        img: "/assets/img/services/service-hm-5-3.jpg",
+        img: "/assets/img/services/x5.jpg",
         icon:"flaticon-cyber-security",
-        title:"School & Hospital Security",
+        title:"STERI-PRO +",
         description: <>Teachings of the great explorer of the truth, the master-builder of human happiness.</>,
     },
     {
         id: 15,
         sirial: "00",
-        img: "/assets/img/services/service-hm-5.jpg",
+        img: "/assets/img/services/x7.jpg",
         icon:"flaticon-shield",
-        title:"Hacker & Demos Security",
+        title:"STERI-POWER +",
         description: <>Teachings of the great explorer of the truth, the master-builder of human happiness.</>,
     },
 

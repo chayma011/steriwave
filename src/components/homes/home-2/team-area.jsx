@@ -2,7 +2,7 @@ import team_data from '@/src/data/team-data';
 import Link from 'next/link';
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
-
+ 
 
 const setting = {
     slidesToShow: 4,

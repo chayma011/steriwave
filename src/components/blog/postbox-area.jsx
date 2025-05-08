@@ -12,30 +12,25 @@ const postbox_content = {
     post_data : [
         {
             id: 1, 
-            img: "/assets/img/news/blog-details.jpg",
+            img: "/assets/img/news/A.jpg",
             video: false,
             imgSlider: false,
             date: "July 21, 2020",
             post_by: "jamil rayhan",
             comments: "02 Comments",
-            title: <>Service Construct deals physical damage with his basic attack in the match.</>,
-            description: <>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore Lorem ipsum dolor sit amet,  eu fugiat nulla pariatur. Excepteur sint occaecat ...</>,
+            title: <>The Science Behind UVC Sterilization: How It Works?</>,
+            description: <>Explain the principles of UVC light (254 nm wavelength) and how it disrupts the DNA/RNA of microorganisms.<br/> Discuss the difference between UVC, UVA, and UVB.<br/>Highlight why UVC is effective against bacteria, viruses, and fungi.</>,
 
         },
         {
-            id: 2, 
-            img: "",
-            video: [
-                {
-                    img: "/assets/img/news/blog-details-2.jpg",
-                }
-            ],
+            id: 2,  
+            img: "/assets/img/news/A.jpg",
             imgSlider: false,
             date: "July 21, 2020",
             post_by: "jamil rayhan",
             comments: "02 Comments",
-            title: <>But he is able to grab the front-most hero, truely paralyzing and dealing</>,
-            description: <>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore Lorem ipsum dolor sit amet,  eu fugiat nulla pariatur. Excepteur sint occaecat ...</>,
+            title: <>UVC Sterilization in Hospitals: Reducing Healthcare-Associated Infections (HAIs)</>,
+            description: <>Explore how UVC technology is used in hospitals to disinfect operating rooms, ICUs, and patient rooms.<br/> Share statistics on the reduction of HAIs with UVC sterilization.<br/>Mention WHO and CDC recommendations for UVC use in healthcare settings.</>,
 
         },
         {
@@ -43,15 +38,15 @@ const postbox_content = {
             img: "",
             video: false,
             imgSlider: [
-                "/assets/img/news/blog-details.jpg",
-                "assets/img/news/blog-details-2.jpg",
-                "assets/img/news/blog-details-3.jpg", 
+                "/assets/img/news/A1.jpg",
+                "assets/img/news/A2.jpg",
+                "assets/img/news/A09.jpg", 
             ],
             date: "July 21, 2020",
             post_by: "jamil rayhan",
             comments: "02 Comments",
-            title: <>But he is able to grab the front-most hero, truely paralyzing and dealing</>,
-            description: <>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore Lorem ipsum dolor sit amet,  eu fugiat nulla pariatur. Excepteur sint occaecat ...</>,
+            title: <>The Role of UVC Sterilization in the Food Industry</>,
+            description: <>Explain how UVC is used to disinfect food processing equipment, packaging, and storage areas.<br/>Discuss compliance with HACCP and FDA standards.<br/>Share case studies or data on mold and bacteria reduction in food facilities.</>,
 
         },
     ],
@@ -196,9 +191,9 @@ const PostboxArea = () => {
                                 <div className="sidebar__widget mb-40">
                                 <h3 className="sidebar__widget-title">Sponsor Adds</h3>
                                 <div className="sidebar__banner w-img p-relative text-center">
-                                    <img src="/assets/img/news/side-details-img.jpg" alt="theme-pure" />
+                                    <img src="/assets/img/news/A08.jpg" alt="theme-pure" />
                                     <div className="sidebar__banner-content">
-                                        <h4>270x240</h4>
+                                        {/* <h4>270x240</h4> */}
                                     </div>
                                 </div>
                                 </div>
