@@ -83,23 +83,13 @@ const HeaderTwo = () => {
                 </div>
                 <div className="tp-header-menu-area d-none d-xl-block">
                     <div className="container">
-                        <div className="header-inner white-bg" style={{boxShadow: '0 2px 10px rgba(70, 68, 68, 0.09)'}}>
-                        <div className="row g-0 align-items-center">
-                            <div className="col-xl-9">
-                                <div className="tp-main-menu-2">
+                        <div className="header-inner white-bg" style={{boxShadow: '0 2px 10px rgba(70, 68, 68, 0.09)', maxWidth: '1030px', margin: '0 auto'}}>
+                        <div className="row g-0 align-items-center justify-content-center" >
+                            <div className="col-xl-12">
+                                <div className="tp-main-menu-2" style={{textAlign: 'center'}}>
                                     <nav id="mobile-menu">
                                         <NavMenu /> 
                                     </nav>
-                                </div>
-                            </div>
-                            <div className="col-xl-3  d-xl-block">
-                                <div className="tp-search-icon">
-                                    <div className="tp-search-wrapper d-flex align-items-center justify-content-end">
-                                     <form onSubmit={(e) => e.preventDefault()}>
-                                        <i className="fal fa-search"></i>
-                                        <input type="text" placeholder="search here..." />
-                                     </form>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +107,7 @@ const HeaderTwo = () => {
                         </div>
                         <div className="col-6">
                             <div className="tp-header-right ml-30">
-                                <a href="#" className="tp-btn-simelar ml-20 d-none d-md-block">Make Appointment</a>
+                                <a href="/contact" className="tp-btn-simelar ml-20 d-none d-md-block">Make Appointment</a>
                                 <a href="#" onClick={() => setIsOpen(true)} className="tp-menu-toggle tp-header-icon2 ml-20 d-xl-none"><i className="far fa-bars"></i></a>
                             </div>
                         </div>

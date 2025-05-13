@@ -40,7 +40,7 @@ const NavMenu = () => {
 
   return (
     <>
-      <ul>
+      <ul style={{display: 'flex', justifyContent: 'center', gap: '30px'}}>
         {menu_data.map((item) => (
           <li key={item.id} className={item.has_dropdown ? "has-dropdown" : ""}>
             <Link href={item.link} onClick={(e) => handleClick(e, item.link)}>{item.title}</Link>{" "}

@@ -10,27 +10,27 @@ import Breadcrumb from "@/src/common/breadcrumbs/breadcrumb";
 import Slider from 'react-slick';
 
 const setting = {
-  slidesToShow: 2,
-  arrows: false,
-  autoplay: false,
+  dots: false,
   infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2
+        slidesToShow: 2,
+        slidesToScroll: 1
       }
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     }
   ]
@@ -44,8 +44,8 @@ const ServiceDetails = () => {
   // Find the service details from service_data
   const service = service_data.find(item => item.id === id);
 
-  // Get related products (excluding current product)
-  const relatedProducts = service_data.slice(3, 6).filter(item => item.id !== id);
+  // Get all products except the current one
+  const relatedProducts = service_data.filter(item => item.id !== id);
   
   // If service not found or page is initially loading
   if (!service) {
@@ -171,45 +171,57 @@ const ServiceDetails = () => {
             </div>
 
             <div className="row">
-              <Slider {...setting} ref={sliderRef}>
-                {relatedProducts.map((item, i) => (
-                  <div key={i} className="col-xl-4">
-                    <div className="tpsvbox mb-30">
-                      <div className="tpsvbox__thumb">
-                        <div className="fix">
-                          <Link href={`/products/${item.id}`}>
-                            <img 
-                              src={item.img} 
-                              alt={item.title} 
-                              className="img-fluid" 
-                              style={{ 
-                                height: "300px", 
-                                width: "100%", 
-                                objectFit: "cover",
-                                borderRadius: "8px"
-                              }} 
-                            />
-                          </Link>
+              <div className="col-12">
+                <Slider {...setting} ref={sliderRef}>
+                  {relatedProducts.map((item, i) => (
+                    <div key={i} className="px-2">
+                      <div className="tpsvbox mb-30" style={{
+                        height: '450px', 
+                        width: '100%',
+                        display: 'flex', 
+                        flexDirection: 'column',
+                        backgroundColor: '#fff',
+                        borderRadius: '8px',
+                        overflow: 'hidden',
+                        boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
+                      }}>
+                        <div className="tpsvbox__thumb" style={{height: '250px', marginTop: '20px'}}>
+                          <div className="fix" style={{height: '100%'}}>
+                            <Link href={`/products/${item.id}`}>
+                              <img 
+                                src={item.img} 
+                                alt={item.title} 
+                                className="img-fluid" 
+                                style={{ 
+                                  height: "100%", 
+                                  width: "100%", 
+                                  objectFit: "cover"
+                                }} 
+                              />
+                            </Link>
+                          </div>
                         </div>
-                        <div className="tpsvbox__icon">
-                          <Link href={`/products/${item.id}`}>
-                            <i className={item.icon}></i>
-                          </Link>
+                        <div className="tpsvbox__content text-center" style={{
+                          flex: 1, 
+                          display: 'flex', 
+                          flexDirection: 'column', 
+                          justifyContent: 'space-between', 
+                          padding: '20px'
+                        }}>
+                          <h3 className="tpsvbox__title" style={{marginBottom: '15px'}}>
+                            <Link href={`/products/${item.id}`}>{item.title}</Link>
+                          </h3>
+                          <p className="mb-0" style={{flex: 1}}>
+                            {typeof item.description === 'string' 
+                              ? item.description.slice(0, 100) + '...'
+                              : item.description}
+                          </p>
                         </div>
-                      </div>
-                      <div className="tpsvbox__content text-center">
-                        <div className="tpsvbox__big-text">
-                          <h2>{item.sirial}</h2>
-                        </div>
-                        <h3 className="tpsvbox__title">
-                          <Link href={`/products/${item.id}`}>{item.title}</Link>
-                        </h3>
-                        <p className="mb-0">{item.description.slice(0, 100)}...</p>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </Slider>
+                  ))}
+                </Slider>
+              </div>
             </div>
           </div>
         </div>

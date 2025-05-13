@@ -2,7 +2,7 @@ const menu_data = [
   {
     id: 1,
     mega_menu: false,
-    has_dropdown: true,
+    has_dropdown: false,
     title: "Home",
     link: "/",
   },
@@ -12,6 +12,12 @@ const menu_data = [
     has_dropdown: false,
     title: "About",
     link: "/about",
+    // sub_menus: [ 
+    //   { link: "/product/steripro", title: "About" }, 
+    //   { link: "/product/steripro+", title: "Mission" },
+    //   { link: "/product/steritower", title: "Vision" },
+       
+    // ],
   },
   {
     id: 3,
@@ -20,25 +26,25 @@ const menu_data = [
     title: "Products",
     link: "/services",
     sub_menus: [ 
-      { link: "/product/steripro", title: "Steripro" }, 
-      { link: "/product/steripro+", title: "Steripro+" },
-      { link: "/product/steritower", title: "Steritower" },
-      { link: "/product/sterifix", title: "Sterifix" }, 
-      { link: "/product/steribox", title: "Steribox" },
-      { link: "/product/steripower", title: "Steripower" }, 
+      { link: "/products/steripro", title: "Steripro" }, 
+      { link: "/products/steripro+", title: "Steripro+" },
+      { link: "/products/steritower", title: "Steritower" },
+      { link: "/products/sterifix", title: "Sterifix" }, 
+      { link: "/products/steribox", title: "Steribox" },
+      { link: "/products/steripower", title: "Steripower" }, 
     ],
   },
-  {
-    id: 4,
-    mega_menu: false,
-    has_dropdown: true,
-    title: "Service",
-    link: "/services",
-  }, 
+  // {
+  //   id: 4,
+  //   mega_menu: false,
+  //   has_dropdown: false,
+  //   title: "Service",
+  //   link: "/services",
+  // }, 
   {
     id: 6,
     mega_menu: false,
-    has_dropdown: true,
+    has_dropdown: false,
     title: "Blog",
     link: "/blog",
     // sub_menus: [
@@ -46,7 +52,6 @@ const menu_data = [
     //   { link: "/blog-details", title: "Blog Details" },
     // ],
   },
-  
   {
     id: 7,
     mega_menu: false,
@@ -54,6 +59,7 @@ const menu_data = [
     title: "Contact",
     link: "/contact",
   },
+  
   
 ];
 export default menu_data;

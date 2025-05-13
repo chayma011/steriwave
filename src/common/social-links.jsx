@@ -2,31 +2,34 @@ import Link from "next/link";
 
 
 const social_links = [
-  {
-    link: "http://facebook.com",
-    target: "_blank",
-    icon: "fab fa-facebook-f", 
-  },
+  
   {
     link: "http://twitter.com",
     target: "_blank",
     icon: "fab fa-twitter", 
-  },  
-  {
-    link: "https://www.behance.com",
-    target: "_blank",
-    icon: "fab fa-behance", 
   }, 
+  {
+    link: "https://www.linkedin.com",
+    target: "_blank",
+    icon: "fab fa-linkedin-in", 
+  },
   {
     link: "https://www.youtube.com",
     target: "_blank",
     icon: "fab fa-youtube", 
   },
   {
-    link: "https://www.linkedin.com",
+    link: "http://facebook.com",
     target: "_blank",
-    icon: "fab fa-linkedin-in", 
+    icon: "fab fa-facebook-f", 
   }, 
+  {
+    link: "https://www.instagram.com",
+    target: "_blank",
+    icon: "fab fa-instagram", 
+  }, 
+ 
+   
 ];
 
 const SocialLinks = () => {
